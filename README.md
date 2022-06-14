@@ -1,6 +1,6 @@
 # Installation
 ```cmd
-pip install ...
+pip install https://github.com/RCR-OOP/pydustry.py/releases/download/v2.0/pydustry.py-2.0_release-py3-none-any.whl
 ```
 
 # Example
