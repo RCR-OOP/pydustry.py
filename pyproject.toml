@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pydustry.py"
+version = "2.0.1"
+description = "Module for server information in the game Mindustry."
+authors = ["Romanin <semina054@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pydustry"}]
+keywords = ["midnustry", "game", "server", "parser", "infomation"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

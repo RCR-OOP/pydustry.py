@@ -1,6 +1,6 @@
 # Installation
 ```cmd
-pip install https://github.com/RCR-OOP/pydustry.py/releases/download/v2.0/pydustry.py-2.0_release-py3-none-any.whl
+pip install -U pydustry.py
 ```
 
 # Example
@@ -8,7 +8,9 @@ pip install https://github.com/RCR-OOP/pydustry.py/releases/download/v2.0/pydust
 ```python
 import pydustry
 
-pydustry.Server("easyplay.su").get_status()
+status = pydustry.Server("easyplay.su").get_status()
+
+print(status)
 ```
 
 - `Return`
