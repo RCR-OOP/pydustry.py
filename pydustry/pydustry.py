@@ -12,6 +12,10 @@ class Status:
     wave: int
     version: float
     vertype: str
+    gamemode: int
+    limit: int
+    desc: int
+    modename: int
     ping: float
 
 class Server:
@@ -45,6 +49,15 @@ class Server:
         info["version"] = unpack(">i", data[:4])[0]
         data = data[4:]
         info["vertype"] = data[1:data[0]+1].decode("utf-8")
+        data = data[data[0]+1:]
+        info['gamemode'] = unpack('>b', data[:1])[0]
+        data = data[1:]
+        info['limit'] = unpack(">i", data[:4])[0]
+        data = data[4:]
+        info['desc'] = data[1:data[0]+1].decode("utf-8")
+        data = data[data[0]+1:]
+        info['modename'] = data[1:data[0]+1].decode("utf-8")
+        data = data[data[0]+1:]
         info["ping"] = round((e_time - s_time) * 1000)
         return Status(**info)
     
