@@ -8,12 +8,24 @@ pip install -U pydustry.py
 ```python
 import pydustry
 
-status = pydustry.Server("easyplay.su").get_status()
+status = pydustry.Server("rcrms.ru").get_status()
 
 print(status)
 ```
 
 - `Return`
 ```python
-Status(name='[#3bffff][*] []EasyPlay Gaming + [#3dffcb]Rating-System', map='EasyPlay.HUB', players=56, wave=1, version=126, vertype='official', ping=35)
+Status(
+    name='[gold]RCR [#B5B8B1]- [white]Ру[blue]сс[red]кий [#B5B8B1]Сервер',
+    map='RCR HUB',
+    players=7,
+    wave=1,
+    version=146,
+    vertype='official',
+    gamemode=0,
+    limit=0,
+    desc='...',
+    modename='LOBBY',
+    ping=37
+)
 ```
